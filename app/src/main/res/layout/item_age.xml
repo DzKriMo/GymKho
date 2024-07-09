@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintDimensionRatio="1:1"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="55dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/age_circle"
+        android:padding="16dp"
+        android:text="19"
+        android:fontFamily="@font/montserratregular"
+        android:layout_margin="8dp"/>
+</LinearLayout>

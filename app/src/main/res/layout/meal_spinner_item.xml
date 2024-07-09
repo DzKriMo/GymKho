@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/montserratregular"
+    android:autoSizeTextType="uniform"
+    android:autoSizeStepGranularity="2dp"
+    android:autoSizeMaxTextSize="100dp"
+    android:autoSizeMinTextSize="10dp"
+    android:autoSizePresetSizes="20dp"
+    android:textColor="#A022F5"
+    android:padding="8dp"
+    android:id="@android:id/text1"
+    android:gravity="center_vertical" />

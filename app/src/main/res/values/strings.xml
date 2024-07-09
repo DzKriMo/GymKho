@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GymKho</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details"><u>Details</u></string>
+
+    <string-array name="meals_array">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snacks</item>
+    </string-array>
+
+</resources>

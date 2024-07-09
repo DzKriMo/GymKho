@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questions.Gender"
+    android:background="#17161B">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="-10dp"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.03"
+        android:id="@+id/top3void"
+
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.075"
+        android:id="@+id/left7void"
+
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.075"
+        android:id="@+id/right7void"
+
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/top3void"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/backcontainer"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/backcontainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/top5void1"
+
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/top5void1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        android:id="@+id/topTextContainer"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topTextContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/topSubTextContainer"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topSubTextContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+
+        android:id="@+id/top5void2"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        android:id="@+id/maleLeft"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top5void2"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/maleTop"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/maleLeft"
+        app:layout_constraintTop_toBottomOf="@id/maleTop"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintWidth_percent="0.25"
+        android:id="@+id/maleContainer"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        android:id="@+id/femaleRight"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/maleContainer"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/femaleBottom"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toStartOf="@id/femaleRight"
+        app:layout_constraintBottom_toTopOf="@id/femaleBottom"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintWidth_percent="0.25"
+        android:id="@+id/femaleContainer"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/femaleBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+
+        android:id="@+id/top5void3"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top5void3"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.075"
+
+        android:id="@+id/genderSpliter"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/maleButtonContainer"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/genderSpliter"
+        app:layout_constraintTop_toBottomOf="@id/top5void3"
+        app:layout_constraintBottom_toBottomOf="@id/genderSpliter"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/femaleButtonContainer"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        app:layout_constraintStart_toEndOf="@id/genderSpliter"
+        app:layout_constraintTop_toBottomOf="@id/top5void3"
+        app:layout_constraintBottom_toBottomOf="@id/genderSpliter"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/genderSpliter"
+        app:layout_constraintHeight_percent="0.1"
+
+        android:id="@+id/top5void4"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top5void4"
+        app:layout_constraintHeight_percent="0.08"
+        android:id="@+id/nextButtonContainer"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="@id/backcontainer"
+        app:layout_constraintBottom_toBottomOf="@id/backcontainer"
+        app:layout_constraintStart_toStartOf="@id/backcontainer"
+        app:layout_constraintEnd_toEndOf="@id/backcontainer"
+        android:id="@+id/back"
+        app:layout_constraintDimensionRatio="1:1"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="What's Your Gender?"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/topTextContainer"
+        app:layout_constraintBottom_toBottomOf="@id/topTextContainer"
+        android:fontFamily="@font/montserratregular"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:autoSizeMaxTextSize="100dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="2dp"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="This will help in your workout process\nand your nutrition program"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/topSubTextContainer"
+        app:layout_constraintBottom_toBottomOf="@id/topSubTextContainer"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="700"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:autoSizeMaxTextSize="100dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="2dp"
+
+        />
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/malecheckbox"
+        app:layout_constraintTop_toTopOf="@id/maleContainer"
+        app:layout_constraintBottom_toBottomOf="@id/maleContainer"
+        app:layout_constraintEnd_toEndOf="@id/maleContainer"
+        app:layout_constraintStart_toStartOf="@id/maleContainer"
+        android:button="@null"
+        android:id="@+id/maleCheckBox"
+        android:checked="true"
+        app:layout_constraintDimensionRatio="19:35"
+        />
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/femalecheckbox"
+        app:layout_constraintTop_toTopOf="@id/femaleContainer"
+        app:layout_constraintBottom_toBottomOf="@id/femaleContainer"
+        app:layout_constraintEnd_toEndOf="@id/femaleContainer"
+        app:layout_constraintStart_toStartOf="@id/femaleContainer"
+        android:button="@null"
+        android:id="@+id/CheckBoxFemale"
+        app:layout_constraintDimensionRatio="19:35"
+
+        />
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/maleButtonContainer"
+        app:layout_constraintEnd_toEndOf="@id/maleButtonContainer"
+        app:layout_constraintTop_toTopOf="@id/maleButtonContainer"
+        app:layout_constraintBottom_toBottomOf="@id/maleButtonContainer"
+        android:button="@null"
+        android:background="@drawable/genderchecker"
+        android:checked="true"
+        android:text="Male"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="900"
+        android:autoSizeMaxTextSize="50dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8dp"
+        android:autoSizeStepGranularity="2dp"
+        android:padding="25dp"
+        android:id="@+id/maleCheckButton"
+        />
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/femaleButtonContainer"
+        app:layout_constraintEnd_toEndOf="@id/femaleButtonContainer"
+        app:layout_constraintTop_toTopOf="@id/femaleButtonContainer"
+        app:layout_constraintBottom_toBottomOf="@id/femaleButtonContainer"
+        android:button="@null"
+        android:background="@drawable/genderchecker"
+        android:text="Female"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="900"
+        android:autoSizeMaxTextSize="50dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8dp"
+        android:autoSizeStepGranularity="2dp"
+        android:padding="25dp"
+        android:id="@+id/femaleCheckButton"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        app:layout_constraintTop_toTopOf="@id/nextButtonContainer"
+        app:layout_constraintBottom_toBottomOf="@id/nextButtonContainer"
+        android:background="@drawable/mainbutton"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="900"
+        android:autoSizeMaxTextSize="50dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="2dp"
+        android:padding="18dp"
+        android:id="@+id/next"
+        />
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#17161B">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="-10dp"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.03"
+        android:id="@+id/top3void"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.075"
+        android:id="@+id/left7void"
+
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.075"
+        android:id="@+id/right7void"
+
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/top3void"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/backcontainer"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/backcontainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/top5void1"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/top5void1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        android:id="@+id/topTextContainer"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topTextContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+
+        android:id="@+id/top5void2"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/top5void2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/midTextContainer"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        app:layout_constraintTop_toBottomOf="@id/midTextContainer"
+        app:layout_constraintHeight_percent="0.08"
+
+        android:id="@+id/first"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+
+        app:layout_constraintTop_toBottomOf="@id/first"
+        app:layout_constraintHeight_percent="0.035"
+        android:id="@+id/firstsplit"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        app:layout_constraintTop_toBottomOf="@id/firstsplit"
+        app:layout_constraintHeight_percent="0.08"
+        android:id="@+id/second"
+
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        app:layout_constraintTop_toBottomOf="@id/second"
+        app:layout_constraintHeight_percent="0.035"
+        android:id="@+id/secondsplit"
+
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        app:layout_constraintTop_toBottomOf="@id/secondsplit"
+        app:layout_constraintHeight_percent="0.03"
+        android:id="@+id/continueContainer"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        app:layout_constraintTop_toBottomOf="@id/continueContainer"
+        app:layout_constraintHeight_percent="0.005"
+        android:id="@+id/continueSplit"
+
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/continueSplit"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintWidth_percent="0.4975"
+
+        android:id="@+id/googleContainer"
+        />
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/googleContainer"
+        app:layout_constraintTop_toTopOf="@id/googleContainer"
+        app:layout_constraintBottom_toBottomOf="@id/googleContainer"
+        app:layout_constraintHeight_percent="0.16"
+        android:background="#ffffff"
+        android:id="@+id/oauthSplit"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/continueSplit"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintWidth_percent="0.4975"
+
+        android:id="@+id/facebookContainer"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/googleContainer"
+
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/bottomvoid1"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintTop_toBottomOf="@id/bottomvoid1"
+        android:id="@+id/loginButtonContainer"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintTop_toBottomOf="@id/loginButtonContainer"
+        android:id="@+id/bottomTextContainerr"
+
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/bottomTextContainerr"
+        android:id="@+id/bottomTextContainer"
+
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.03"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottomvoid2"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="@id/backcontainer"
+        app:layout_constraintBottom_toBottomOf="@id/backcontainer"
+        app:layout_constraintStart_toStartOf="@id/backcontainer"
+        app:layout_constraintEnd_toEndOf="@id/backcontainer"
+        android:id="@+id/back"
+        app:layout_constraintDimensionRatio="1:1"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Log Into Your Account"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/topTextContainer"
+        app:layout_constraintBottom_toBottomOf="@id/topTextContainer"
+        android:fontFamily="@font/montserratregular"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:autoSizeMaxTextSize="100dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="2dp"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/midTextContainer"
+        app:layout_constraintBottom_toBottomOf="@id/midTextContainer"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        android:text="Welcome back ! "
+        android:textColor="#ffffff"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="900"
+        android:textSize="15dp"
+        android:padding="8dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8dp"
+        android:autoSizeMaxTextSize="25dp"
+        android:autoSizeStepGranularity="2dp"
+        />
+    <com.thekrimo.gymkho.CustomEditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:padding="20dp"
+        android:fontFamily="@font/montserratregular"
+        android:textColorHint="#4DFFFFFF"
+        android:textColor="#ffffff"
+        android:background="@drawable/input"
+        app:layout_constraintTop_toTopOf="@id/first"
+        app:layout_constraintBottom_toBottomOf="@id/first"
+        app:layout_constraintStart_toStartOf="@id/first"
+        app:layout_constraintEnd_toEndOf="@id/first"
+        android:id="@+id/email"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/email"
+        app:layout_constraintTop_toTopOf="@id/email"
+        app:layout_constraintBottom_toBottomOf="@id/email"
+        android:src="@drawable/email"
+        app:layout_constraintWidth_percent="0.05"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="15dp"
+        android:elevation="30dp"
+
+        />
+
+
+    <com.thekrimo.gymkho.CustomEditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        android:background="@drawable/input"
+        app:layout_constraintTop_toTopOf="@id/second"
+        app:layout_constraintBottom_toBottomOf="@id/second"
+        app:layout_constraintStart_toStartOf="@id/second"
+        app:layout_constraintEnd_toEndOf="@id/second"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:padding="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColorHint="#4DFFFFFF"
+        android:textFontWeight="900"
+        android:textColor="#ffffff"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintTop_toTopOf="@id/password"
+        app:layout_constraintBottom_toBottomOf="@id/password"
+        android:src="@drawable/eye"
+        app:layout_constraintWidth_percent="0.05"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="15dp"
+        android:elevation="30dp"
+android:id="@+id/toggle1"
+
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/continueContainer"
+        app:layout_constraintBottom_toBottomOf="@id/continueContainer"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        android:text="Or Continue With"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="900"
+        android:autoSizeMaxTextSize="50dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8dp"
+        android:autoSizeStepGranularity="2dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/googleContainer"
+        app:layout_constraintBottom_toBottomOf="@id/googleContainer"
+        android:id="@+id/googleContent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toEndOf="@id/googleContainer"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/google"
+            android:padding="10dp"
+            android:layout_weight="2"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Google"
+            android:textSize="18dp"
+            android:fontFamily="@font/montserrat"
+            android:textFontWeight="900"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="8dp"
+            android:autoSizeStepGranularity="2dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/facebookContainer"
+        app:layout_constraintBottom_toBottomOf="@id/facebookContainer"
+        android:id="@+id/facebookContent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/facebookContainer"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/facebook"
+            android:padding="10dp"
+            android:layout_weight="2"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Facebook"
+            android:textSize="18dp"
+            android:fontFamily="@font/montserrat"
+            android:textFontWeight="900"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="8dp"
+            android:autoSizeStepGranularity="2dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        app:layout_constraintTop_toTopOf="@id/loginButtonContainer"
+        app:layout_constraintBottom_toBottomOf="@id/loginButtonContainer"
+        android:background="@drawable/mainbutton"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat"
+        android:textSize="18dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeStepGranularity="2dp"
+        android:padding="18dp"
+        android:id="@+id/loginButton"
+        android:textFontWeight="900"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/bottomTextContainer"
+        app:layout_constraintBottom_toBottomOf="@id/bottomTextContainer"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        android:id="@+id/signup"
+        android:paddingHorizontal="10dp"
+        app:flow_verticalAlign="center"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Don't have an account ?"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat"
+            android:textFontWeight="900"
+            android:layout_weight="3"
+            android:textSize="18dp"
+            android:autoSizeStepGranularity="2dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeMinTextSize="10dp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="SignUp"
+            android:textColor="#A022F5"
+            android:fontFamily="@font/montserratbold"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:autoSizeStepGranularity="2dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeMinTextSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

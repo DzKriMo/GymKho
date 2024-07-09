@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questions.Change"
+    android:background="#17161B">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="-10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.03"
+        android:id="@+id/top3void"
+
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.075"
+        android:id="@+id/left7void"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.075"
+        android:id="@+id/right7void"
+        />
+
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.13"
+        android:id="@+id/left13void"
+        android:layout_margin="0dp"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.05"
+        android:id="@+id/left5void"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.13"
+        android:id="@+id/right13void"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/top3void"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/backcontainer"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/backcontainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.025"
+        android:id="@+id/top5void1"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/top5void1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        android:id="@+id/topTextContainer"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topTextContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/topSubTextContainer"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topSubTextContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        android:id="@+id/top5void2"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left5void"
+        app:layout_constraintTop_toBottomOf="@id/top5void2"
+        app:layout_constraintWidth_percent="0.235"
+        app:layout_constraintHeight_percent="0.16"
+        android:id="@+id/thumbContainer"
+        android:layout_marginStart="5dp"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left5void"
+        app:layout_constraintTop_toBottomOf="@id/top5void2"
+        app:layout_constraintWidth_percent="0.235"
+        app:layout_constraintHeight_percent="0.040"
+        android:id="@+id/thumbTextTopMargin"
+        android:layout_marginStart="5dp"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/thumbContainer"
+        app:layout_constraintEnd_toEndOf="@id/thumbContainer"
+        app:layout_constraintTop_toBottomOf="@id/thumbTextTopMargin"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHeight_percent="0.032"
+        android:id="@+id/thumbTextContainer"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        android:id="@+id/bottom10void"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom10void"
+        app:layout_constraintHeight_percent="0.08"
+        android:id="@+id/nextButtonContainer"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="@id/backcontainer"
+        app:layout_constraintBottom_toBottomOf="@id/backcontainer"
+        app:layout_constraintStart_toStartOf="@id/backcontainer"
+        app:layout_constraintEnd_toEndOf="@id/backcontainer"
+        android:id="@+id/back"
+        app:layout_constraintDimensionRatio="1:1"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="How Much To Gain\nin one week?"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/topTextContainer"
+        app:layout_constraintBottom_toBottomOf="@id/topTextContainer"
+        android:fontFamily="@font/montserratregular"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:autoSizeMaxTextSize="100dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="2dp"
+        android:padding="10dp"
+        android:id="@+id/toptxt"/>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Set your weight gain goals to tailor your fitness plan and achieve your desired results."
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/topSubTextContainer"
+        app:layout_constraintBottom_toBottomOf="@id/topSubTextContainer"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="700"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:autoSizeMaxTextSize="100dp"
+        android:id="@+id/subtxt"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="2dp"
+
+        />
+
+
+    <SeekBar
+        android:id="@+id/customSeekBar"
+        style="@style/CustomSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:min="10"
+        app:layout_constraintBottom_toBottomOf="@id/thumbContainer"
+        app:layout_constraintStart_toEndOf="@id/left13void"
+        app:layout_constraintEnd_toStartOf="@id/right13void"
+        android:layout_marginBottom="5dp"
+        android:progress="1"
+        android:progressDrawable="@drawable/progress"
+        android:thumb="@color/Transparent"
+        android:padding="0dp"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/seekthumb"
+        app:layout_constraintStart_toStartOf="@id/customSeekBar"
+        app:layout_constraintTop_toTopOf="@id/customSeekBar"
+        app:layout_constraintBottom_toBottomOf="@id/customSeekBar"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/end"
+        app:layout_constraintEnd_toEndOf="@id/customSeekBar"
+        app:layout_constraintTop_toTopOf="@id/customSeekBar"
+        app:layout_constraintBottom_toBottomOf="@id/customSeekBar"
+        android:id="@+id/end"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/thumbContainer"
+        app:layout_constraintEnd_toEndOf="@id/thumbContainer"
+        app:layout_constraintTop_toTopOf="@id/thumbContainer"
+        app:layout_constraintBottom_toBottomOf="@id/thumbContainer"
+        android:id="@+id/seekBarValueContainer"
+        android:background="@drawable/thumb"
+
+        />
+
+        <TextView
+            android:id="@+id/seekBarValue"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/thumbTextContainer"
+            app:layout_constraintEnd_toEndOf="@id/thumbTextContainer"
+            app:layout_constraintTop_toTopOf="@id/thumbTextContainer"
+            app:layout_constraintBottom_toBottomOf="@id/thumbTextContainer"
+            android:text="1"
+            android:textAlignment="center"
+            android:elevation="10dp"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:autoSizeMaxTextSize="100dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="10dp"
+            android:autoSizeStepGranularity="2dp"
+            />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7void"
+        app:layout_constraintEnd_toStartOf="@id/right7void"
+        app:layout_constraintTop_toTopOf="@id/nextButtonContainer"
+        app:layout_constraintBottom_toBottomOf="@id/nextButtonContainer"
+        android:background="@drawable/mainbutton"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="900"
+        android:autoSizeMaxTextSize="50dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="2dp"
+        android:padding="18dp"
+        android:id="@+id/next"
+        tools:ignore="VisualLintButtonSize" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

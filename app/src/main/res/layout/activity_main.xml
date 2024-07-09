@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#17161B"
+    >
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="-10dp"
+        />
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B217161B"
+        android:elevation="50dp"
+        android:id="@+id/newUser"
+        android:visibility="gone"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.15"
+            android:id="@+id/dialogueleft15"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.15"
+            android:id="@+id/dialogueright15"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/dialogueContainer"
+            android:background="@drawable/dialogue">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.17"
+                android:id="@+id/boxtopvoid"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxtopvoid"
+                app:layout_constraintHeight_percent="0.22"
+                app:layout_constraintDimensionRatio="1:1"
+                android:id="@+id/boxCheckContainer"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxCheckContainer"
+                app:layout_constraintHeight_percent="0.1"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/boxTitleContainer"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxTitleContainer"
+                app:layout_constraintHeight_percent="0.12"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/boxTextContainer"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxTextContainer"
+                app:layout_constraintHeight_percent="0.13"
+                android:layout_marginTop="20dp"
+                app:layout_constraintDimensionRatio="3:1"
+                android:id="@+id/boxButtonContainer"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/boxcheck"
+                app:layout_constraintStart_toStartOf="@id/boxCheckContainer"
+                app:layout_constraintEnd_toEndOf="@id/boxCheckContainer"
+                app:layout_constraintTop_toTopOf="@id/boxCheckContainer"
+                app:layout_constraintBottom_toBottomOf="@id/boxCheckContainer"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="@id/boxTitleContainer"
+                app:layout_constraintEnd_toEndOf="@id/boxTitleContainer"
+                app:layout_constraintTop_toTopOf="@id/boxTitleContainer"
+                app:layout_constraintBottom_toBottomOf="@id/boxTitleContainer"
+                android:text="Done"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="20dp"
+                android:autoSizeMaxTextSize="100dp"
+                android:textColor="#ffffff"
+                android:autoSizeMinTextSize="15dp"
+                android:autoSizeStepGranularity="2dp"
+                android:autoSizeTextType="uniform"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="@id/boxTextContainer"
+                app:layout_constraintEnd_toEndOf="@id/boxTextContainer"
+                app:layout_constraintTop_toTopOf="@id/boxTextContainer"
+                app:layout_constraintBottom_toBottomOf="@id/boxTextContainer"
+                android:text="Congrats ! Your sign up\nwas successfully done"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="700"
+                android:textSize="20dp"
+                android:autoSizeMaxTextSize="100dp"
+                android:textColor="#ffffff"
+                android:autoSizeMinTextSize="12dp"
+                android:autoSizeStepGranularity="2dp"
+                android:autoSizeTextType="uniform"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="@id/boxButtonContainer"
+                app:layout_constraintEnd_toEndOf="@id/boxButtonContainer"
+                app:layout_constraintTop_toTopOf="@id/boxButtonContainer"
+                app:layout_constraintBottom_toBottomOf="@id/boxButtonContainer"
+                android:background="@drawable/mainbutton"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="20dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:textColor="#ffffff"
+                android:autoSizeMinTextSize="15dp"
+                android:autoSizeStepGranularity="2dp"
+                android:autoSizeTextType="uniform"
+                android:paddingVertical="5dp"
+                android:id="@+id/okDialogueButton"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/navbg"
+        app:menu="@menu/nav"
+        app:itemIconTint="@color/nav_icon"
+        app:itemTextColor="@color/nav_icon"
+        android:layout_marginBottom="-30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

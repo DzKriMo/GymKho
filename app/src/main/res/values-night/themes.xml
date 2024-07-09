@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GymKho" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <style name="CustomSeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:thumbOffset">0dp</item>
+    </style>
+
+    <style name="CustomSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupBackground">@color/black</item>
+        <item name="android:textColor">#A022F5</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+
+        <style name="SpinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+            <item name="android:textColor">#A022F5</item> <!-- Purple color -->
+        </style>
+
+        <!-- Style for spinner dropdown items -->
+        <style name="SpinnerDropdownItemStyle" parent="android:Widget.TextView.SpinnerItem">
+            <item name="android:textColor">#FFFFFF</item> <!-- White color -->
+            <item name="android:background">@android:color/black</item> <!-- Optional: Background color for dropdown items -->
+        </style>
+
+
+</resources>

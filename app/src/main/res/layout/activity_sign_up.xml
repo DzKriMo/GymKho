@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="#17161B"
+    >
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="-10dp"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.03"
+                android:id="@+id/top5"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintWidth_percent="0.075"
+        android:id="@+id/left7"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintWidth_percent="0.075"
+        android:id="@+id/right7"
+        />
+
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/top5"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/backcontainer"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="@id/backcontainer"
+        app:layout_constraintBottom_toBottomOf="@id/backcontainer"
+        app:layout_constraintStart_toStartOf="@id/backcontainer"
+        app:layout_constraintEnd_toEndOf="@id/backcontainer"
+        android:id="@+id/back"
+        app:layout_constraintDimensionRatio="1:1"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/inbetween75"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Create Your Account"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/inbetween75"
+        app:layout_constraintBottom_toBottomOf="@id/inbetween752"
+        android:fontFamily="@font/montserratregular"
+
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:autoSizeMaxTextSize="100dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="2dp"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/inbetween75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        android:id="@+id/inbetween752"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/inbetween752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/inbetween753"
+                />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.03"
+         android:id="@+id/bottom5"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom5"
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/bottom52"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.02"
+        app:layout_constraintBottom_toTopOf="@id/bottom52"
+        android:id="@+id/bottomTextContainerr"
+
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/bottom52"
+        app:layout_constraintBottom_toBottomOf="@id/bottom52"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        android:id="@+id/login"
+        android:paddingHorizontal="10dp"
+        android:gravity="center_vertical"
+        app:flow_verticalAlign="center"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Already have an account ?"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat"
+            android:textFontWeight="900"
+            android:layout_weight="3"
+            android:textSize="18dp"
+            android:autoSizeStepGranularity="2dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeMinTextSize="10dp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="  LogIn"
+            android:textColor="#A022F5"
+            android:fontFamily="@font/montserratbold"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:autoSizeStepGranularity="2dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeMinTextSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintBottom_toTopOf="@id/bottomTextContainerr"
+        android:id="@+id/bottom53"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintHeight_percent="0.035"
+        app:layout_constraintTop_toBottomOf="@id/forthsplit"
+        android:id="@+id/bottom54"
+        />
+
+
+
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/bottom53"
+        app:layout_constraintEnd_toEndOf="@id/bottom53"
+        app:layout_constraintTop_toTopOf="@id/bottom53"
+        app:layout_constraintBottom_toBottomOf="@id/bottom53"
+        android:background="@drawable/mainbutton"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat"
+        android:textSize="18dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeStepGranularity="2dp"
+        android:id="@+id/signupButton"
+        android:padding="18dp"
+        android:textFontWeight="900"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/inbetween753"
+        android:id="@+id/top25"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/top25"
+        app:layout_constraintBottom_toBottomOf="@id/top25"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        android:text="Tell us about yourself ! "
+        android:textColor="#ffffff"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="900"
+        android:textSize="15dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8dp"
+        android:autoSizeMaxTextSize="25dp"
+        android:autoSizeStepGranularity="2dp"
+        android:padding="8dp"
+        />
+
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/left7"
+            app:layout_constraintEnd_toStartOf="@id/right7"
+            app:layout_constraintTop_toBottomOf="@id/top25"
+            app:layout_constraintHeight_percent="0.005"
+            android:id="@+id/barrier"
+            />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        app:layout_constraintHeight_percent="0.08"
+                android:id="@+id/first"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintTop_toBottomOf="@id/first"
+        app:layout_constraintHeight_percent="0.035"
+                android:id="@+id/firstsplit"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintTop_toBottomOf="@id/firstsplit"
+        app:layout_constraintHeight_percent="0.08"
+                android:id="@+id/second"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintTop_toBottomOf="@id/second"
+        app:layout_constraintHeight_percent="0.035"
+                android:id="@+id/secondsplit"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintTop_toBottomOf="@id/secondsplit"
+        app:layout_constraintHeight_percent="0.08"
+                android:id="@+id/third"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintTop_toBottomOf="@id/third"
+        app:layout_constraintHeight_percent="0.035"
+                android:id="@+id/thirdsplit"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintTop_toBottomOf="@id/thirdsplit"
+        app:layout_constraintHeight_percent="0.08"
+                android:id="@+id/forth"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left7"
+        app:layout_constraintEnd_toStartOf="@id/right7"
+        app:layout_constraintTop_toBottomOf="@id/forth"
+        app:layout_constraintHeight_percent="0.035"
+                android:id="@+id/forthsplit"
+        />
+
+
+
+
+
+        <com.thekrimo.gymkho.CustomEditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:hint="Your Name"
+            android:padding="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textColorHint="#4DFFFFFF"
+            app:layout_constraintHorizontal_weight="900"
+            android:textColor="#ffffff"
+    android:background="@drawable/input"
+            android:textFontWeight="900"
+            app:layout_constraintTop_toTopOf="@id/first"
+            app:layout_constraintBottom_toBottomOf="@id/first"
+            app:layout_constraintStart_toStartOf="@id/first"
+            app:layout_constraintEnd_toEndOf="@id/first"
+            android:id="@+id/name"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        android:src="@drawable/name"
+        app:layout_constraintWidth_percent="0.05"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="15dp"
+        android:elevation="30dp"
+        />
+
+
+
+
+    <com.thekrimo.gymkho.CustomEditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textEmailAddress"
+android:background="@drawable/input"
+        app:layout_constraintTop_toTopOf="@id/second"
+        app:layout_constraintBottom_toBottomOf="@id/second"
+        app:layout_constraintStart_toStartOf="@id/second"
+        app:layout_constraintEnd_toEndOf="@id/second"
+        android:id="@+id/email"
+        android:hint="Email"
+        android:textFontWeight="900"
+        android:padding="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColorHint="#4DFFFFFF"
+        app:layout_constraintHorizontal_weight="900"
+        android:textColor="#ffffff"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/email"
+        app:layout_constraintTop_toTopOf="@id/email"
+        app:layout_constraintBottom_toBottomOf="@id/email"
+        android:src="@drawable/email"
+        app:layout_constraintWidth_percent="0.05"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="15dp"
+        android:elevation="30dp"
+
+        />
+
+
+
+    <com.thekrimo.gymkho.CustomEditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+android:background="@drawable/input"
+        android:fontFamily="@font/montserrat"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#4DFFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/third"
+        app:layout_constraintEnd_toEndOf="@id/third"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="900"
+        app:layout_constraintStart_toStartOf="@id/third"
+        app:layout_constraintTop_toTopOf="@id/third"
+        android:textFontWeight="900"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintTop_toTopOf="@id/password"
+        app:layout_constraintBottom_toBottomOf="@id/password"
+        android:src="@drawable/eye"
+        app:layout_constraintWidth_percent="0.05"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="15dp"
+        android:elevation="30dp"
+        android:id="@+id/toggle1"
+        />
+
+
+    <com.thekrimo.gymkho.CustomEditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+android:background="@drawable/input"
+        app:layout_constraintTop_toTopOf="@id/forth"
+        app:layout_constraintBottom_toBottomOf="@id/forth"
+        app:layout_constraintStart_toStartOf="@id/forth"
+        app:layout_constraintEnd_toEndOf="@id/forth"
+        android:id="@+id/confirmpassword"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColorHint="#4DFFFFFF"
+        android:textFontWeight="900"
+        app:layout_constraintHorizontal_weight="900"
+        android:textColor="#ffffff"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/confirmpassword"
+        app:layout_constraintTop_toTopOf="@id/confirmpassword"
+        app:layout_constraintBottom_toBottomOf="@id/confirmpassword"
+        android:src="@drawable/eye"
+        app:layout_constraintWidth_percent="0.05"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="15dp"
+        android:elevation="30dp"
+        android:id="@+id/toggle2"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
